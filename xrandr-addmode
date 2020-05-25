@@ -7,7 +7,7 @@ set -e -u
 
 if [ $# -ne 3 ]
 then
-    printf 'Usage: %s OUTPUT WIDTH HEIGHT\n' "${0#**/}" >&2
+    printf 'Usage: %s OUTPUT WIDTH HEIGHT\n' "${0##*/}" >&2
     exit 1
 fi
 output="$1"
